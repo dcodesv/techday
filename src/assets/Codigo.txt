@@ -1,0 +1,14 @@
+Degradado de fondo:
+background: linear-gradient(169deg, #67096D 0%, #1A0242 40%, #000 80%);
+
+
+Colores
+Verde: #68FF33 (Resaltar acciones, botones de acciones positivas)
+Morado oscuro: #1A0242 (Botones secundarios, degradado de fondo)
+Morado claro: #67096D (contenido primario)
+Blanco: #FFFFFF (Texto con resaltado)
+Blanco 60%: rgba(255, 255, 255, 0.60) (Texto para contenido con baja jerarquia)
+
+
+Tipografía
+Viga
