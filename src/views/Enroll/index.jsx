@@ -26,10 +26,10 @@ const Enroll = () => {
     >
       <BgDot />
       <Head />
-      <div className="p-8 relative z-10">
+      <div className="p-8 relative z-20">
         <h1 className="text-white text-2xl">Enrolamiento</h1>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
-          <div className="bg-black bg-opacity-50 p-6 rounded-lg col-span-1">
+          <div className="bg-black bg-opacity-50 p-6 rounded-lg col-span-1 relative z-10">
             <h2 className="text-white text-lg mb-4">Cargar archivos</h2>
             <p className="text-gray-400 mb-4">Puede cargar un máximo de 10 archivos</p>
             <div className="mb-4">
@@ -63,7 +63,7 @@ const Enroll = () => {
               <span className="material-symbols-outlined ml-2">settings</span>
             </button>
           </div>
-          <div className="bg-black bg-opacity-50 p-6 rounded-lg col-span-3">
+          <div className="bg-black bg-opacity-50 p-6 rounded-lg col-span-3 relative z-10">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-white text-lg">Log de acciones</h2>
               <button className="bg-gray-700 text-white p-2 rounded-full">

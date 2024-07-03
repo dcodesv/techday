@@ -24,7 +24,7 @@ const Head = () => {
   }, [location])
 
   return (
-    <div className="flex w-full justify-center md:justify-between items-center box-border px-10 py-6 flex-wrap">
+    <div className="flex w-full justify-center md:justify-between items-center box-border px-10 py-6 flex-wrap relative z-10">
       <img src={Logo} alt="logo" />
       <ul className="flex w-full md:w-fit gap-8 justify-center items-center my-2 md:my-0">
         {menu.map((item, index) => (
