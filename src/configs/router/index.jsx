@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom"
 import Enroll from "../../views/Enroll"
 import Attendance from "../../views/Attendance"
 import CameraFaceDetect from "../../views/cameraFaceDetect"
+import FaceRecognition from '../../views/FaceRecognition'
 
 const router = createBrowserRouter(
   [
@@ -22,6 +23,10 @@ const router = createBrowserRouter(
       path: "/attendance",
       element: <Attendance />,
     },
+    {
+      path: '/face',
+      element: <FaceRecognition/>
+    }
   ],
   {
     basename: "/techday",
