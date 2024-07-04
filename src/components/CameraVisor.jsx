@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
-import Webcam from 'react-webcam';
-import './AttendanceComponent.css';
+import React, { useState } from "react"
+import Webcam from "react-webcam"
 
 const AttendanceComponent = () => {
-  const [step, setStep] = useState(1); // 1: Reconocimiento, 2: Procesando, 3: Confirmación
-  const [userData, setUserData] = useState(null);
+  const [step, setStep] = useState(1) // 1: Reconocimiento, 2: Procesando, 3: Confirmación
+  const [userData, setUserData] = useState(null)
 
   const handleCapture = async () => {
-    setStep(2);
+    setStep(2)
     setTimeout(() => {
       setUserData({
-        id: '50907',
-        name: 'Diego Armando Villalobos Villalta',
-        role: 'Desarrollador de Software'
-      });
-      setStep(3);
-    }, 100); // Simula un tiempo de espera para el procesamiento
-  };
+        id: "50907",
+        name: "Diego Armando Villalobos Villalta",
+        role: "Desarrollador de Software",
+      })
+      setStep(3)
+    }, 100) // Simula un tiempo de espera para el procesamiento
+  }
 
   return (
     <div className="attendance-container">
       {step === 1 && (
         <div className="recognition-view">
           <Webcam
+            className="w-48"
             audio={false}
             screenshotFormat="image/jpeg"
             width="100%"
@@ -53,7 +53,7 @@ const AttendanceComponent = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default AttendanceComponent;
+export default AttendanceComponent
